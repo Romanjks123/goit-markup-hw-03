@@ -110,7 +110,6 @@ header {
 }
 
 .link-nav {
-    padding: 24px 0;
 }
 
 .span-studio {
@@ -119,6 +118,7 @@ header {
 
 .nav-ul {
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .info-ul {
