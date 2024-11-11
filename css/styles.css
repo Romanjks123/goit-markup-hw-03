@@ -68,9 +68,13 @@ header {
     background-color: #ffffff;
 }
 
+.head {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .container {
     max-width: 1158px;
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     margin: 0 auto; 
 }
 
@@ -86,6 +90,7 @@ header {
 .navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .list-nav {
@@ -154,7 +159,7 @@ header {
     display: flex;
     text-align: center;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
 }
 
 .section-one {
@@ -173,13 +178,13 @@ header {
     background-color: #4d5ae5;
     color: #ffffff;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     border-radius: 4px;
     padding: 16px;
     border: none;
     min-width: 169px;
     height: 56px;
-    margin-top: 48px;
+    margin: 48px auto 0;
 }
 
 .section-one-button:hover, .section-one-button:focus {
@@ -196,8 +201,17 @@ header {
 }
 
 .title-sec-two {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .list-two {
@@ -226,8 +240,7 @@ header {
     background-color: #f4f4fd;
     display: flex;
     flex-direction: row;
-    padding-top: 120px;
-    padding-bottom: 142px;
+    padding: 120px 0;
 }
 
 .title-sec-threee {
@@ -236,12 +249,12 @@ header {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .list  {
     display: flex;
-    gap: 46px;
+    gap: 24px;
 }
 
 .list-sec-three {
@@ -251,23 +264,27 @@ header {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-    
+}
 
+.div-sec-three {
+    padding: 32px 0;
 }
 
 .title-sec-three {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 24px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .par-sec-three {
     font-size: 16px;
     letter-spacing: 0.02em;
     padding-bottom: 32px;
+    text-align: center;
 }
 
 .section-four {
@@ -278,7 +295,8 @@ header {
 .list-four {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .list-four-section {
@@ -286,7 +304,6 @@ header {
     flex-direction: column;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    gap: 8px;
     min-width: 360px;
     height: 420px;
     justify-content: space-between;
@@ -298,21 +315,25 @@ header {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
 .list-title-four {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-left: 16px;
+}
+
+.div-section-four {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .list-paragraph-four {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 16px;
-    padding-bottom: 32px;
 }
 
 .card-person {
@@ -325,13 +346,12 @@ header {
 
 .fotter {
     background-color: #2e2f42;
+        padding: 100px 0;
 }
 
 .section-foot {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 100px 0;
 }
 
 .fot-logo {
@@ -342,6 +362,8 @@ header {
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: #4d5ae5;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 
 .fot-par {
