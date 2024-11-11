@@ -90,12 +90,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-        padding: 24px 0;
 }
 
 .list-nav {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .nav-logo {
@@ -347,30 +347,27 @@ header {
 
 .fotter {
     background-color: #2e2f42;
-        padding: 100px 0;
+    padding: 100px 0;
 }
 
-.section-foot {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .fot-logo {
     font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        color: #4d5ae5;
-        display: inline-block;
-        margin-bottom: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .fot-par {
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    width: 264px;
+    max-width: 264px;
 }
 
 .fot-span-logo {
